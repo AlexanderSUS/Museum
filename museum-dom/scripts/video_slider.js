@@ -116,6 +116,7 @@ function videoOn(n) {
   videoList[n].addEventListener('click', togglePlay);
   screenPlayBtn.classList.add('active');
     video = document.querySelector('.main-screen.active');
+    video.currentTime = 0;
   }
 
 /* END switch video and slides */
