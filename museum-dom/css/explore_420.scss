@@ -4,7 +4,7 @@
     
     .container {
 
-        .text-content {
+      .text-content {
         max-width: auto;
       }
 
@@ -16,12 +16,15 @@
           max-width: 380px;
           max-height: 368px;
         }
+
         .background-img {
           background-size: 380px 368px;
         }
+
         .foreground-img {
           background-size: 380px 368px;
         }
+
         .slider {
           
           &::-webkit-slider-thumb {
@@ -33,4 +36,3 @@
     }
   }
 }
-

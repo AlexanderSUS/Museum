@@ -33,19 +33,13 @@
 
   .welcome-slider {
     grid-area: 5 / 1 / 6 / 2;
-    // max-width: 728px;
-    // max-height: 546px;
-  
-    // .welcome-slide {
-      // max-width: 728px;
-      // max-height: 546px;
-    // }
   }
-    .slide1 { background-image:  url('../assets/1.jpg'); }
-    .slide2 { background-image:  url('../assets/2.jpg'); }
-    .slide3 { background-image:  url('../assets/3.jpg'); }
-    .slide4 { background-image:  url('../assets/4.jpg'); }
-    .slide5 { background-image:  url('../assets/5.jpg'); }
+
+  .slide1 { background-image:  url('../assets/1.jpg'); }
+  .slide2 { background-image:  url('../assets/2.jpg'); }
+  .slide3 { background-image:  url('../assets/3.jpg'); }
+  .slide4 { background-image:  url('../assets/4.jpg'); }
+  .slide5 { background-image:  url('../assets/5.jpg'); }
 
   .slide-control-wrapper {
     grid-area: 6/ 1 / 7 /2; 
@@ -65,6 +59,7 @@
     box-sizing: content-box;
     padding-right: 0;
   }
+
   .square-control { 
     box-sizing: content-box;
     justify-content: space-between;

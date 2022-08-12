@@ -34,14 +34,7 @@
 
   .welcome-slider {
     grid-area: 5 / 1 / 6 / 2;
-    // max-width: 380px;
-    // max-height: 285px;
   }
-  
-    // .welcome-slide {
-      // max-width: 380px;
-      // max-height: 285px;
-    // }
 
   .slide-control-wrapper {
     grid-area: 6/ 1 / 7 /2; 
@@ -68,6 +61,7 @@
       height: 8px;
     }
   }
+
   .square-control { 
     box-sizing: content-box;
     justify-content: space-between;
@@ -79,5 +73,4 @@
     width: 7px;
     height: 7px;
   }
-
 }

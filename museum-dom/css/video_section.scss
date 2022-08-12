@@ -19,7 +19,6 @@
   }
 }
 
-
 /*      VIDEO CONTROLL    */
 .video-control {
   display: flex;
@@ -63,7 +62,6 @@
   max-width: 929px; 
   background: linear-gradient(to right, $dark-red 0%, $dark-red 0%, #c4c4c4 0%, #c4c4c4 100%);
   margin: 0;
-
 }
 
 .volume-range { 
@@ -88,11 +86,9 @@
   cursor: ew-resize;
   background: #fff;
 }
-
 /*    END VIDEO-CONTROL   */
 
-
-  /* Styles for slider */
+/* Styles for slider */
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -100,111 +96,110 @@
   overflow: hidden;
 }
 
-  .main-screen-wrapper { 
-    display: none;
-    position: relative;
-    overflow: hidden;
+.main-screen-wrapper { 
+  display: none;
+  position: relative;
+  overflow: hidden;
 
-    animation: 0.3s ease-in-out;
-  }
+  animation: 0.3s ease-in-out;
+}
 
-  .main-screen-wrapper.active,
-  .main-screen-wrapper.next { 
-    display: inline;
-  }
+.main-screen-wrapper.active,
+.main-screen-wrapper.next { 
+  display: inline;
+}
 
-  .main-screen-wrapper.next {
-    position: absolute;
-    width: 100%;
-  } 
+.main-screen-wrapper.next {
+  position: absolute;
+  width: 100%;
+} 
 
-  .main-screen {
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    width: auto;
-    z-index: 0;
-  }
+.main-screen {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: 0;
+}
 
-  .to-left { 
-    animation-name: left; 
-  }
-  
-  .from-right { 
-    animation: right; 
-  }
-  
-  .to-right {
-    animation-name: right;
-    animation-direction: reverse;
-  }
-  
-  .from-left {
-    animation-name: left;
-    animation-direction: reverse;
-  }
-  
-  
-  @keyframes left {
-  
-    from { left: 0; }  
-    to { left: -100%; }
-  }
-  
-  @keyframes right {
-    from { left: 100%; }
-    to { left: 0; }
-  }
-  .video-arrow { cursor: pointer;}
-  
-  .video-section .container {
+.to-left { 
+  animation-name: left; 
+}
+
+.from-right { 
+  animation: right; 
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from { left: 0; }  
+  to { left: -100%; }
+}
+
+@keyframes right {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
+.video-arrow { cursor: pointer;}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+
+  .slider-container {
     display: flex;
     flex-direction: column;
-  
-    width: 100%;
-    height: auto;
-  
-  
-    .slider-container {
-      display: flex;
-      flex-direction: column;
-    }
-      
-    .preview-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .slide-screen {
-      max-width: 452px;
-      &:hover { 
-        cursor: pointer;
-      }
-    }
   }
-  
-  .dots-control {
+    
+  .preview-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 200px;
-    height: 12px;
-    
-    margin: 40px auto 0 auto;
   }
-  .dot-btn {
-    height: 12px;
-    width: 12px;
-  
-    background-color: #999;
-    border-radius: 50%;
-  
+
+  .slide-screen {
+    max-width: 452px;
     &:hover { 
-      background-color: $dark-red; 
       cursor: pointer;
     }
   }
+}
+
+.dots-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  height: 12px;
   
-  .active-dot { background-color: #333; }
+  margin: 40px auto 0 auto;
+}
+
+.dot-btn {
+  height: 12px;
+  width: 12px;
+
+  background-color: #999;
+  border-radius: 50%;
+
+  &:hover { 
+    background-color: $dark-red; 
+    cursor: pointer;
+  }
+}
+
+.active-dot { background-color: #333; }

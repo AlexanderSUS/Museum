@@ -5,6 +5,7 @@
   max-width: 1440px;
   overflow-y: hidden;
 }
+
 .picture-inner-container {
   display: flex;
   flex-flow: column wrap;
@@ -13,7 +14,6 @@
   justify-items: flex-end;
 
   max-height: 3020px;
-  // max-height: 3170px;
 
   img {
     position: relative;
@@ -22,14 +22,12 @@
     height: auto;
     padding-bottom: 24px;
 
-    //animation property
     opacity: 0;
     transition: opacity 1s ease-out;
 
     &:first-of-type {
       padding-top: 50px;
     }
-
   }
 
   img.is-visible {

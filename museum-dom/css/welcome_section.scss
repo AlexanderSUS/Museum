@@ -118,7 +118,6 @@
 
 
 @keyframes left {
-
   from { left: 0; }  
   to { left: -100%; }
 }
@@ -128,18 +127,14 @@
   to { left: 0; }
 }
 
-
 .slide-control-wrapper {
   grid-area: 8 / 4 / 9 / 5;
   display: flex;
-
-  // flex: auto 1 600px;
 
   z-index: 6;
 
   align-items: center;
   justify-content: space-evenly;
-
 
   width: 600px;
   height: 120px;
@@ -175,6 +170,7 @@
 
   width: 180px;
 }
+
 .square {
   height: 16px;
   width: 16px;

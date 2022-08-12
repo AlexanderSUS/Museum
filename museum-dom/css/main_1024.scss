@@ -5,7 +5,7 @@
 
   .container { 
     max-width: 984px;
-   }
+  }
 
   .section-title { 
     font-size: 50px; 
@@ -13,9 +13,8 @@
     margin-bottom: 83px;
   }
 
-
   .underline-title::after { 
-      top: 155px;
-      max-width: 984px;
-    }
+    top: 155px;
+    max-width: 984px;
+  }
 }

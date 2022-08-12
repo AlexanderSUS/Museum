@@ -1,5 +1,4 @@
 header {
-
   width: 100%;
   margin: 0 auto;
 
@@ -50,11 +49,12 @@ header {
     line-height: 31px;
     letter-spacing: 5px;
     text-transform: uppercase;
+
     transition: 0.3s;
 
-      &:hover {
-        color: $font-gold;
-      }
+    &:hover {
+      color: $font-gold;
+    }
   }
 }  
 
@@ -63,6 +63,7 @@ header {
   width: 100%;
 
 }
+
 .header-nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -70,8 +71,8 @@ header {
   align-items: center;
 
   background-color: $bg-dark;
-
 }
+
 .header-nav-link {
   display: block;
 
@@ -90,10 +91,8 @@ header {
     color: $font-gold;
   }
 }
-/* HAMBURGER MENU   */
 
 .gamburger,
 .menu-arrow { 
   display: none;
 }
-/* END HAMBURGER MENU     */
