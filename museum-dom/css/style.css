@@ -377,7 +377,7 @@ header {
     max-width: 728px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 420px) {
   .section-title {
     font-size: 28px;
     line-height: 40px;
@@ -1026,7 +1026,7 @@ header {
     background-size: 728px 100%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 420px) {
   .explore-section .container .text-content {
     max-width: auto;
   }
@@ -1375,7 +1375,7 @@ header {
 
   /* Styles for slider */
 }
-@media only screen and (max-width: 420px) and (max-width: 768px) {
+@media only screen and (max-width: 420px) and (max-width: 420px) {
   .video-module .slide-screen {
     max-width: 180px;
     height: 101px;
@@ -2279,7 +2279,7 @@ footer {
     margin-right: 30px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 420px) {
   footer {
     height: 400px;
     padding: 0 0;
