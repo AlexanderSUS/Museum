@@ -8,7 +8,7 @@ const picture = [];
 for (let i = 0; i < pictureMaxNum; i++) {
   picture[i] = document.createElement('img');
   picture[i].classList.add('gallery-img'); 
-  picture[i].src = `./assets/gallery/galery${i + 1}.jpg`;
+  picture[i].src = `./assets/gallery/galery${i + 1}.webp`;
   picture[i].alt = `galery${i + 1}`;
 }
 
