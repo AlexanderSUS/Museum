@@ -1,29 +1,13 @@
 /*    COMMON STYLE    */
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*, *::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
-  color: #fff;
-  background-color: #fff;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 li {
@@ -33,8 +17,17 @@ li {
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 300;
+}
+
+.dark-section {
+  color: white;
+  background-color: #030303;
+}
+
+.light-section {
+  color: black;
+  background-color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -47,7 +40,6 @@ a {
 header {
   width: 100%;
   margin: 0 auto;
-  background-color: #030303;
 }
 
 .header-container {
@@ -57,7 +49,6 @@ header {
   align-items: center;
   height: 150px;
   max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -67,25 +58,22 @@ header {
   align-items: center;
   max-width: 199px;
   width: 100%;
+  padding: 2px;
 }
-.header-container-logo .header-logo-logo {
-  height: 26px;
-  width: 49px;
-}
-.header-container-logo .header-logo-logo svg {
+.header-container-logo svg {
   fill: #fff;
   transition: 0.7s;
 }
-.header-container-logo .header-logo-logo svg:hover {
+.header-container-logo svg:hover {
   fill: #9d8665;
 }
 .header-container-logo .header-logo-text {
-  margin: 0;
-  font-family: "Forum", cursive;
+  margin: 0 0 -5px 0;
+  font-family: "Forum";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 28px;
-  line-height: 31px;
+  line-height: 30.91px;
   letter-spacing: 5px;
   text-transform: uppercase;
   transition: 0.3s;
@@ -104,14 +92,10 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #030303;
 }
 
 .header-nav-link {
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
   color: #fff;
   font-style: normal;
   line-height: 26px;
@@ -764,7 +748,7 @@ header {
   position: relative;
   margin-top: 23px;
   margin-bottom: 22px;
-  font-family: "Forum", cursive;
+  font-family: "Forum";
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -1063,6 +1047,7 @@ header {
   position: relative;
   top: 230px;
   left: 610px;
+  margin: 0;
 }
 
 .screen-play-btn.fullscreen {
