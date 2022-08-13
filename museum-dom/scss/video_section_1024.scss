@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1024px) { 
+  .video-section {
+
+    h2 { margin-bottom: 40px; }
+
+    p { display: none; }
+  }
+
+  video {
+    max-width: 984px;
+    max-height: 504px;
+    margin-bottom: 40px;
+  }
+
+  .video-control {
+    display: none;
+    }
+
+    /* Styles for slider */
+    @import "video_slider_1024.scss";
+}

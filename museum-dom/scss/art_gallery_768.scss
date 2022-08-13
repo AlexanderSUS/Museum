@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px) {
+  .gallery-section .container .section-title { margin-bottom: 40px; }
+
+  .picture-container {
+    height: 1080px;
+    max-width: 728px;
+  }
+
+  .picture-inner-container {
+    align-content: space-between;
+
+    max-height: 3600px;
+
+    img {
+      width: calc((100% - 24px) / 2);
+    }
+  }
+}

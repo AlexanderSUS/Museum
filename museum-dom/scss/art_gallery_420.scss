@@ -1,0 +1,16 @@
+@media only screen and (max-width: 420px) {
+  .picture-container {
+    height: 637px;
+    max-width: 380px;
+  }
+
+  .picture-inner-container {
+    align-content: space-between;
+
+    max-height: 1875px;
+
+    img {
+      width: calc((100% - 24px) / 2);
+    }
+  }
+}

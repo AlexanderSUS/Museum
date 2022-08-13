@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1024px) {
+  .gallery-section .container .section-title { margin-bottom: 60px; }
+
+  section.gallery-section { padding-bottom: 0;}
+
+  .picture-container {
+    height: 1265px;
+    max-width: 984px;
+  }
+
+  .picture-inner-container {
+    align-content: space-between;
+
+    max-height: 2020px;
+  }
+}

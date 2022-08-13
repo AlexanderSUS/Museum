@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 411px;
+  }
+
+  .inner-footer {
+    flex-direction: row;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wrapper-logo-nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 180px;
+    width: auto;
+  }
+
+  .footer-container-logo {
+    width: 199px;
+    margin-bottom: 277px;
+
+    .footer-logo-logo {
+      margin-top: 8px;
+    }
+
+    .footer-logo-text {
+      line-height: 50px;
+    }
+  }  
+
+  .footer-nav-list {
+    width: auto;
+    max-width: unset;
+
+    margin-top: 18px;
+    margin-left: 100px;
+  }
+
+  .footer-nav-item {
+    max-width: 85px;
+    padding-right: 0;
+
+    &:nth-of-type(1n+4) {
+      margin-left: 168px;
+    }
+  }
+
+ .footer-nav-link {
+   font-size: 18px;
+   font-weight: 100;
+   line-height: 21px;
+  }
+
+  .footer-socials {
+    margin-left: 298px;
+  }
+
+  .footer-bottom {
+    max-width: 768px;
+    height: 102px;
+  }
+
+  #year{ margin-right: 30px;}
+}

@@ -1,0 +1,29 @@
+@media only screen and (max-width: 768px) {
+ 
+  .explore-section { 
+
+    h2 { text-align: left;}
+    
+    p {
+      display: none;
+    }
+    
+    .container {
+      flex-direction: column;
+      align-items: unset;
+
+      .text-content {
+        max-width: 728px;
+      }
+
+      .slider-container {
+
+        width: 728px;
+        height: 705px;
+        img {
+          background-size: 728px 100%;
+        }
+      }
+    }
+  }
+}
