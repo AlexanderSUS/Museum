@@ -1,19 +1,9 @@
-.section-title { 
-  margin-top: 0;
-}
-
 .visiting-cards {
-  display: grid;;
-  grid-template-columns: repeat(auto-fit, 424px);
-  grid-gap: 60px 75px;
-  justify-content: center;
-  
-  height: auto;
-
-  img {
-    max-width: 440px;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 75px;
+  column-gap: 60px; 
 }
 
 .cards { 
@@ -24,16 +14,12 @@
   h3 {
     position: relative;
 
-    margin-top: 23px;
-    margin-bottom: 22px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
 
-    font-family: $title-font;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px; 
-    text-transform: uppercase;
+    @include title-font;
+    font-size: 2rem;
+    line-height: 2.1875rem;
 
     &::after {
       position: absolute;
@@ -53,9 +39,13 @@
   p { 
     margin: 0;
 
+    font-weight: 100;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+
     &:last-of-type {
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 1.125rem;
+      margin-top: 0.5em;
     }
   }
 }
