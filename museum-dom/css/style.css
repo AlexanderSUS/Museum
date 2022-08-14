@@ -875,15 +875,23 @@ header {
 }
 /*    END VISITING SECTION    */
 /*    EXPLORE SECTION     */
+.explore-section.underline-title::after {
+  max-width: 660px;
+  margin-left: 12.5%;
+}
+
 .explore-section {
   display: flex;
-}
-.explore-section h2:after {
-  max-width: 660px;
+  margin-top: -0.5rem;
 }
 .explore-section p {
   margin-bottom: 25px;
-  line-height: 38px;
+  font-size: 1.375em;
+  font-weight: 300;
+  line-height: 38.5px;
+}
+.explore-section p:first-of-type {
+  padding-right: 1rem;
 }
 .explore-section .container {
   display: flex;
@@ -901,6 +909,7 @@ header {
   width: 720px;
   height: 700px;
   z-index: 10;
+  margin-top: 15px;
   background-color: #030303;
 }
 .explore-section .container .slider-container .img {
