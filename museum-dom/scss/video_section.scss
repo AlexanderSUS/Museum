@@ -41,7 +41,7 @@
 .screen-play-btn {
   position: relative;
   top: calc(($video-height-1920 - $video-screen-btn-1920) / 2);
-  left: calc(($wrapper-lengh-1920-1440 - $video-screen-btn-1920) / 2);
+  left: calc(($wrapper-length-1920-1440 - $video-screen-btn-1920) / 2);
 }
 
 .screen-play-btn.fullscreen {
