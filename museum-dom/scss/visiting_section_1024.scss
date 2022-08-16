@@ -1,8 +1,6 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $break-1024) {
   .visiting-cards {
-    height: auto;
-    grid-template-columns: repeat(auto-fit, 330px);
-    grid-gap: 60px 108px;
+    gap: 60px 108px;
     justify-content: center;
 
     a img {
