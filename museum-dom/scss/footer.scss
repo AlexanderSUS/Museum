@@ -1,74 +1,25 @@
-footer {
-  height: 392px;
-  background-color: $bg-dark;
-}
-
 .inner-footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  column-gap: 137px;
 
-  justify-content: space-between;
-
-  max-width: 1440px;
+  max-width: $wrapper-length-1920-1440;
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 50px;
-
-  border-bottom: 3px solid #666;
 }
 
-.wrapper-logo-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 604px;
+.footer .logo {
+  align-items: flex-start;
 }
-
-.footer-container-logo {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-
-  width: 195px;
-  height: 128px;
-
-  margin: 0 0;
-
-  .footer-logo-logo {
-
-    svg {
-      fill: #fff;
-      transition: 0.7s;
-
-      &:hover {
-        fill: $font-gold;
-      }
-    }
-  }
-
-  .footer-logo-text {
-    margin: 0;
-
-    font-family:'Forum', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 31px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    transition: 0.3s;
-
-      &:hover {
-        color: $font-gold;
-      }
-  }
-}  
 
 .footer-nav {
-  display: flex;
+  padding-top: 2px;;
+}
+
+.footer-nav.second {
+  margin-left: 32px;
 }
 
 .footer-nav-list {
@@ -76,32 +27,23 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  
-  max-width: 257px;
-  max-height: 128px;
+  gap:25px 160px ;
+  max-height: 155px; 
 
   background-color: $bg-dark;
-}
-
-.footer-nav-item {
-  padding-bottom: 25px;
-  padding-right: 150px;
-
-  &:nth-of-type(3n+3) {
-    padding-bottom: 0;
-  }
 }
 
 .footer-nav-link {
   display: block;
 
+  margin-top: 2px;
+
   font-family:'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 100;
-
   color: #fff;
   font-style: normal;
-  line-height: 26px;
+  line-height: 25.78px;
   letter-spacing: 2px;
   transition: 0.3s;
 
@@ -113,14 +55,12 @@ footer {
 
 .footer-socials {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
+  column-gap: 25px;
   justify-content: space-between;
   align-self: flex-end;
-  justify-self: end;
-  max-width: 340px;
-  width: 100%;
-  max-height: 48px;
+  margin-left: auto;
 
   li { 
     display: inline-block; 
@@ -140,11 +80,17 @@ footer {
     
       &:hover {
         svg rect { stroke: $font-gold; }
-
         svg path { fill: $font-gold;}
       }
     }
   }
+}
+
+hr {
+  margin: 0;
+  height: 3px;
+  background-color: #666666;
+  border: none;
 }
 
 .footer-bottom {
@@ -156,5 +102,12 @@ footer {
   max-width: 1440px;
   height: 124px;
   margin: 0 auto;
+
+  font-size: 22px;
+  letter-spacing: 2px;
   font-weight: 100;
+}
+
+.school {
+  padding-left: 32px;
 }

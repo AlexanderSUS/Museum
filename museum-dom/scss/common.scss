@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins.scss';
 
 body { 
   margin: 0;
@@ -7,6 +8,7 @@ body {
 }
 
 ul {
+  margin: 0;
   padding-left: 0;
 }
 
@@ -34,6 +36,41 @@ a {
 
   a {
     color: black;
+  }
+}
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 199px;
+  width: 100%;
+
+  padding: 2px;
+
+  svg {
+    fill: white;
+    transition: 0.7s;
+    
+    &:hover {
+      fill: $font-gold; 
+    }
+  }
+
+  .logo-text {
+    margin: 0 0 -5px 0;
+
+    @include title-font;
+    font-size: 1.75rem;
+    line-height: 1.9rem;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: $font-gold;
+    }
   }
 }
 
