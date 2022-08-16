@@ -2,13 +2,17 @@
 
 .section { 
   width: 100%;
-  margin: 0 auto;
+}
+
+.section:not(.welcome-section) { 
   padding: 75px 0; 
 }
 
 .container {
   max-width: $wrapper-length-1920-1440;
   width: 100%;
+
+  margin: 0 auto;
 }
 
 .section-title {
@@ -18,6 +22,10 @@
   @include title-font;
   font-size: 80px;
   line-height: 90px;
+}
+
+.section-title:not(.welcome-section) {
+  margin-bottom: 103px;
 }
 
 .gold-title { color: $font-gold; }
