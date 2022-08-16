@@ -7,9 +7,8 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: $wrapper-length-1920-1440;
   width: 100%;
-  margin: 0 auto;
 }
 
 .section-title {

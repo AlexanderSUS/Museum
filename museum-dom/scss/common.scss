@@ -21,10 +21,6 @@ a {
   font-family:'Roboto', sans-serif;
 }
 
-main {
-  overflow: hidden;
-}
-
 .dark-section {
   color: white;
   background-color: $bg-dark;
@@ -67,8 +63,8 @@ main {
     margin: 0 0 -5px 0;
 
     @include title-font;
-    font-size: 1.75rem;
-    line-height: 1.9rem;
+    font-size: 28px;
+    line-height: 30.91px;
 
     transition: 0.3s;
 
@@ -80,9 +76,10 @@ main {
 
 //TO DO move out this and 
 @media only screen and (max-width: $break-1024) {
-  body {
-    font-size: 14px;
+  html {
+    font-size: 12px;
   }
+
   a { font-size: 20px; }
 }
 

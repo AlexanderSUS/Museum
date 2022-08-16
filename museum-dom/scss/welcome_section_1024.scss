@@ -1,32 +1,30 @@
 @media only screen and (max-width: 1024px) {
   .welcome-section {
-    padding: 0 20px;
-    height: 585px;
+    width: 100%;
+    height: auto;
 
     .container {
-      grid-template-columns: minmax(auto, 284px ) minmax(auto, 112px) minmax(auto, 37px) minmax(auto, 551px);
+      grid-template-columns: 20px minmax(auto, 284px ) minmax(auto, 112px) minmax(auto, 37px) minmax(auto, 551px) 20px;
       grid-template-rows: minmax(auto, 50px) minmax(auto, 180px) 
                           minmax(auto, 25px) minmax(auto, 28px) 
                           minmax(auto, 50px) minmax(auto, 60px) 
                           minmax(auto, 72px) minmax(auto, 60px)
                           minmax(auto, 60px);
 
-      height: 585px;
-      max-width: 984px;
+      h1 {
+        grid-area: 2 / 2 / 3 / 5; 
 
-      .section-title {
-        font-size: 50px;
-        line-height: 90px ;
+        line-height: 90px;
       }
     
       p {
-        grid-area: 4 / 1 / 5/ 4;
+        grid-area: 4 / 2 / 5/ 5;
         font-size: 24px;
         z-index: 5;
       }
 
       a {
-        grid-area: 6 / 1 / 7/ 3;
+        grid-area: 6 / 2 / 7/ 4;
         width: 300px;
         height: 60px;
 
@@ -38,16 +36,31 @@
   }
 
   .welcome-slider {
-    grid-area: 1 / 2 / 10 / 5;
+    grid-area: 1 / 3 / 10 / 6;
   }
   
-    .welcome-slide {
-      width: 100%;
-      height: 100%;
-    }
+  .welcome-slide {
+    width: 100%;
+    height: 100%;
+  }
 
   .slide-control-wrapper {
-    grid-area: 9 / 2 / 10 /5; 
-    width: 700px;
+    grid-area: 8 / 1 / 10 /7; 
+
+    column-gap: 45px;
+    justify-content: flex-end;
+
+    width: 100%;
+
+
+    font-size: 20px;
+  }
+
+  .arrow-control {
+    margin-right: 85px;
+  }
+
+  .square-control {
+    width: 160px;    
   }
 }
