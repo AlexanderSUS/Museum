@@ -21,6 +21,10 @@ a {
   font-family:'Roboto', sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 .dark-section {
   color: white;
   background-color: $bg-dark;
