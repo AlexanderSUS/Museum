@@ -260,42 +260,38 @@
     <section class="section tickets-section underline-title" id="tickets">
       <div class="container">
         <h2 class="section-title gold-title">Buy tickets</h2>
-        <div class="tickets-content-container">
-          <form class="ticket-input-area">
-            <div class="ticket-type">
-              <h4>Ticket Type</h4>
-              <input class="radio-btn-tickets" type="radio" name="ticket_type" id="permanent" value="permanent" checked>
-              <label class="lablel-container" for="permanent">
-                Permanent exhibition</label>
-              <input class="radio-btn-tickets" type="radio"  name="ticket_type" id="temporary" value="temporary">
-              <label class="lablel-container" for="temporary">
-                Temporary exhibition</label>
-              <input class="radio-btn-tickets" type="radio"  name="ticket_type" id="combined" value="combined">
-              <label  class="lablel-container" for="combined">
-                Combined Admission</label>
+        <form class="ticket-input-area">
+          <div class="ticket-left-column">
+            <h4>Ticket Type</h4>
+            <input class="radio-btn-tickets" type="radio" name="ticket_type" id="permanent" value="permanent" checked>
+            <label class="lablel-container" for="permanent">
+              Permanent exhibition</label>
+            <input class="radio-btn-tickets" type="radio"  name="ticket_type" id="temporary" value="temporary">
+            <label class="lablel-container" for="temporary">
+              Temporary exhibition</label>
+            <input class="radio-btn-tickets" type="radio"  name="ticket_type" id="combined" value="combined">
+            <label  class="lablel-container" for="combined">
+              Combined Admission</label>
+          </div>
+          <div class="ticket-right-column">
+            <h4>Amount</h4>
+            <label for="basic_amount">Basic 18+</label>
+            <div class="number-input">
+              <button class="ticket-btn minus-basic" type="button">&ndash;</button>
+              <input class="ticket-input quantity-basic" type="number" name="quantity" id="basic_amount" value="1" min="0" max="20" disabled>
+              <button  class="ticket-btn plus plus-basic" type="button">+</button>
             </div>
-            <div class="ticket-amount">
-              <h4>Amount</h4>
-              <div class="number-input">
-                <label for="basic_amount">Basic 18+</label>
-                <button class="ticket-btn minus-basic" type="button"></button>
-                <input class="ticket-input quantity-basic" type="number" name="quantity" id="basic_amount" value="1" min="0" max="20" disabled>
-                <button  class="ticket-btn plus plus-basic" type="button"></button>
-              </div>
-              <div class="number-input">
-                <label for="senior_amount">Senior 65+</label>
-                <button class="ticket-btn minus-senior" type="button" ></button>
-                <input class="ticket-input quantity-senior" type="number" name="quantity" id="senior_amount" value="1" min="0" max="20" disabled>
-                <button class="ticket-btn plus plus-senior" type="button"></button>
-              </div>
+            <label for="senior_amount">Senior 65+</label>
+            <div class="number-input">
+              <button class="ticket-btn minus-senior" type="button">&ndash;</button>
+              <input class="ticket-input quantity-senior" type="number" name="quantity" id="senior_amount" value="1" min="0" max="20" disabled>
+              <button class="ticket-btn plus plus-senior" type="button">+</button>
             </div>
-            <div class="confirm-container">
-              <span class="output-sum-text">Total &euro; <span id="output-sum"></span></span>
-              <output class="output-sum"></output>
-              <button class="buy-now" type="button">Buy Now</button>
-            </div>
-          </form>
-        </div>
+            <span class="output-sum-text">Total &euro;<span id="output-sum"></span></span>
+            <output class="output-sum"></output>
+          </div>
+        </form>
+        <button class="buy-now" type="button">Buy Now</button>
       </div>
     </section>
     <div class="parallax"></div>

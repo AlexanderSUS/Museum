@@ -1370,14 +1370,28 @@ header {
 }
 /*    END VIDEO SECTION   */
 /*  GALLERY SECTION   */
+.section.gallery-section {
+  padding-bottom: 0;
+}
+
 .gallery-section .container .section-title {
   margin-bottom: 75px;
 }
 
 .picture-container {
-  height: 1885px;
+  position: relative;
+  height: 1960px;
   max-width: 1440px;
   overflow-y: hidden;
+}
+
+.gallery-gradient {
+  position: absolute;
+  bottom: 0;
+  z-index: 50;
+  height: 360px;
+  width: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0) 100%);
 }
 
 .picture-inner-container {
@@ -1459,110 +1473,108 @@ header {
 }
 /*  END GALLERY SECTION   */
 /*    TICKET SECTION   */
-.tickets-content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  max-height: 550px;
-  color: #000;
+.tickets-section .container {
+  height: 743px;
+  background-position: bottom left;
   background-image: url(../assets/ticket_images/ticket_img.webp);
   background-repeat: no-repeat;
 }
 
 .ticket-input-area {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-content: flex-start;
-  max-width: 720px;
+  justify-content: space-between;
+  padding-left: 780px;
 }
 
-.ticket-type {
+.ticket-input-area h4 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.ticket-input-area label {
+  font-size: 1.375rem;
+}
+
+.ticket-left-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-  padding-left: 60px;
 }
-.ticket-type h4 {
-  margin-bottom: 50px;
-  margin-top: 0;
-  font-size: 28px;
-}
-.ticket-type label {
-  margin: 0 23px 25px 0;
+.ticket-left-column label {
+  margin-top: 7px;
+  margin-bottom: 21px;
   padding-left: 40px;
 }
-.ticket-type label:last-of-type {
-  margin-bottom: 0;
-}
-.ticket-type input[type=radio] {
+.ticket-left-column input[type=radio] {
   margin: 3px 0;
 }
 
-.ticket-amount {
+.ticket-right-column {
   display: flex;
   flex-direction: column;
-  max-height: 341px;
-  max-width: 150px;
-  margin-left: 240px;
+  gap: 10px;
 }
-.ticket-amount h4 {
-  margin-top: 0;
-  margin-bottom: 25px;
+.ticket-right-column h4 {
+  margin-bottom: 12px;
   text-align: right;
-  font-size: 28px;
 }
-.ticket-amount .number-input {
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  height: 91px;
-  width: 150px;
-}
-.ticket-amount .number-input:first-of-type {
-  padding-bottom: 10px;
-}
-.ticket-amount .number-input:last-of-type {
-  padding-bottom: 50px;
-}
-.ticket-amount .number-input label {
-  margin-bottom: 15px;
+.ticket-right-column label {
+  margin-bottom: 5px;
 }
 
-input[type=number] {
+.number-input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   box-sizing: border-box;
   width: 150px;
   height: 50px;
-  padding: 0;
-  text-align: center;
-  font: inherit;
   border: 3px solid #000;
 }
 
-.confirm-container {
-  text-align: right;
+.number-input input[type=number] {
+  box-sizing: border-box;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  padding: 0;
+  text-align: center;
+  font-size: 26px;
+  outline: none;
+  border: none;
 }
-.confirm-container .buy-now {
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input button {
+  -webkit-appearance: none;
+  font-size: 32px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.buy-now {
   position: relative;
+  float: right;
   height: 50px;
   width: 175px;
+  margin-top: 50px;
   font-family: Roboto, sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #fff;
   overflow: hidden;
-  cursor: pointer;
   border: none;
   background-color: #000;
 }
-.confirm-container .buy-now:hover {
+.buy-now:hover {
   background-color: #9d8665;
 }
-.confirm-container .buy-now:after {
+
+.buy-now:after {
   content: "";
   background: #710707;
   display: block;
@@ -1574,7 +1586,8 @@ input[type=number] {
   opacity: 0;
   transition: all 0.8s;
 }
-.confirm-container .buy-now:active:after {
+
+.buy-now:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
@@ -1583,10 +1596,11 @@ input[type=number] {
 
 .output-sum-text {
   display: block;
-  margin-bottom: 50px;
+  margin-top: 43px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 28px;
+  letter-spacing: 1.65px;
 }
 
 /* RADIO BUTTON STYLE   */
@@ -1600,8 +1614,6 @@ input[type=radio]:checked + label,
 input[type=radio]:not(:checked) + label {
   position: relative;
   cursor: pointer;
-  line-height: 26px;
-  display: inline-block;
   color: #666;
 }
 
@@ -1621,12 +1633,12 @@ input[type=radio]:not(:checked) + label {
 [type=radio]:checked + label:after,
 [type=radio]:not(:checked) + label:after {
   content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
   width: 7px;
   height: 7px;
   background: #000;
-  position: absolute;
-  top: 5px;
-  left: 5px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1645,59 +1657,6 @@ input[type=radio]:not(:checked) + label {
 }
 
 /* END  RADIO BUTTON STYLE */
-/* NUM INPUT STYLE    */
-input[type=number] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-input[type=number]:disabled {
-  background-color: #fff;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.number-input button {
-  position: relative;
-  top: 20px;
-  outline: none;
-  -webkit-appearance: none;
-  background-color: transparent;
-  border: none;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  margin: 0;
-  position: relative;
-}
-
-.number-input button.plus {
-  top: -21px;
-  left: 100px;
-}
-
-.number-input button:before,
-.number-input button:after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 1rem;
-  height: 2px;
-  background-color: #212121;
-  transform: translate(-50%, -50%);
-}
-
-.number-input button.plus:after {
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-/* END NUM INPUT STYLE  */
 @media only screen and (max-width: 1024px) {
   .tickets-content-container {
     height: 440px;
@@ -1709,32 +1668,32 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 29px;
   }
 
-  .ticket-type {
+  .ticket-left-column {
     display: none;
   }
 
-  .ticket-amount {
+  .ticket-right-column {
     max-height: 321px;
     max-width: 175px;
     margin-left: 80px;
   }
-  .ticket-amount h4 {
+  .ticket-right-column h4 {
     text-align: left;
   }
-  .ticket-amount .number-input {
+  .ticket-right-column .number-input {
     height: 90px;
     width: 175px;
   }
-  .ticket-amount .number-input:first-of-type {
+  .ticket-right-column .number-input:first-of-type {
     padding-bottom: 29px;
   }
-  .ticket-amount .number-input:last-of-type {
+  .ticket-right-column .number-input:last-of-type {
     padding-bottom: 25px;
   }
-  .ticket-amount .number-input label {
+  .ticket-right-column .number-input label {
     margin-bottom: 10px;
   }
-  .ticket-amount .number-input p {
+  .ticket-right-column .number-input p {
     line-height: 29px;
   }
 
@@ -1791,22 +1750,22 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 49px;
   }
 
-  .ticket-amount {
+  .ticket-right-column {
     margin-left: 80px;
   }
-  .ticket-amount h4 {
+  .ticket-right-column h4 {
     margin-bottom: 39px;
     letter-spacing: 0px;
     font-style: normal;
     font-weight: 900;
   }
-  .ticket-amount .number-input:first-of-type {
+  .ticket-right-column .number-input:first-of-type {
     padding-bottom: 20px;
   }
-  .ticket-amount .number-input:last-of-type {
+  .ticket-right-column .number-input:last-of-type {
     padding-bottom: 39px;
   }
-  .ticket-amount .number-input p {
+  .ticket-right-column .number-input p {
     line-height: 26px;
   }
 
@@ -1836,10 +1795,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 0;
   }
 
-  .ticket-amount {
+  .ticket-right-column {
     margin-left: 0;
   }
-  .ticket-amount h4 {
+  .ticket-right-column h4 {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 16px;
@@ -1847,10 +1806,10 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 500;
     text-align: center;
   }
-  .ticket-amount .number-input:first-of-type {
+  .ticket-right-column .number-input:first-of-type {
     padding-bottom: 15px;
   }
-  .ticket-amount .number-input label {
+  .ticket-right-column .number-input label {
     font-size: 16px;
     margin-bottom: 15px;
   }
