@@ -1,16 +1,15 @@
 @import 'mixins.scss';
 
 .section { 
-  width: 100%;
+  padding: 75px 20px; 
 }
 
-.section:not(.welcome-section) { 
-  padding: 75px 0; 
+.section.welcome-section{
+  padding: 0 20px;
 }
 
 .container {
   max-width: $wrapper-length-1920-1440;
-  width: 100%;
 
   margin: 0 auto;
 }
