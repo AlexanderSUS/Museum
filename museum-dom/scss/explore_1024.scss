@@ -1,6 +1,13 @@
 @media only screen and (max-width: 1024px) {
- 
+.explore-section.underline-title {
+  &::after {
+    max-width: $wrapper-length-1024-984;
+    margin-left: auto;
+  }
+} 
+
   .explore-section { 
+    margin-top: 10px;
 
     h2:after { max-width: 984px; }
     
@@ -26,6 +33,10 @@
 
         .text-content {
         max-width: 984px;
+      }
+
+      .slider-container {
+        margin-top: 0;
       }
     }
   }
