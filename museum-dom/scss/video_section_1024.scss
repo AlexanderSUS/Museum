@@ -1,9 +1,12 @@
 @media only screen and (max-width: 1024px) { 
   .video-section {
-
-    h2 { margin-bottom: 40px; }
+    .section-title { margin-bottom: 40px; }
 
     p { display: none; }
+  }
+
+  .custom-vp {
+    max-height: 504px;
   }
 
   video {
@@ -12,10 +15,20 @@
     margin-bottom: 40px;
   }
 
-  .video-control {
-    display: none;
-    }
+  .screen-play-btn {
+    top: calc(($video-height-1024 - $video-screen-btn-1024) / 2);
+    left: calc(($wrapper-length-1024-984 - $video-screen-btn-1024) / 2);
+  }
 
-    /* Styles for slider */
-    @import "video_slider_1024.scss";
+  .video-control {
+    height: 60px;
+    top: -100px;
+  }
+
+  .video-control-btn:not(.screen-play-btn) {
+    transform: scale(75%)
+  }
+
+  /* Styles for slider */
+  @import "video_slider_1024.scss";
 }
