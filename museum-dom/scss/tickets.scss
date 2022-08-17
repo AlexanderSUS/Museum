@@ -39,7 +39,7 @@
 .ticket-right-column { 
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 11px; 
 
   h4 { 
     margin-bottom: 12px;
@@ -97,11 +97,11 @@
   height: 50px; 
   width: 175px;
 
-  margin-top: 50px;
+  margin-top: 47px;
 
-  font-family: Roboto, sans-serif;
+  font-family: $text-font;
   font-size: 22px;
-  font-weight: 300;;
+  @include link-font;
   color: #fff;
 
   overflow: hidden;
@@ -200,3 +200,14 @@ input[type="radio"]:not(:checked) + label {
     transform: scale(1);
 }
 /* END  RADIO BUTTON STYLE */
+
+@media (max-width: 1096px) {
+  .ticket-input-area {
+    padding-left: 0;
+    justify-content: flex-end;
+  }
+
+  .ticket-left-column {
+    display: none;
+  }
+}
