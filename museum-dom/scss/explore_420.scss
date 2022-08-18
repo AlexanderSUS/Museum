@@ -1,36 +1,31 @@
 @media only screen and (max-width: 420px) {
- 
-  .explore-section { 
-    
-    .container {
+  .explore-section .container {
+    h2:after { 
+      top: 57px;
+    }
 
-      .text-content {
-        width: auto;
+    .slider-container {
+      width: 380px;
+      height: 368px;
+
+      img {
+        max-width: 380px;
+        max-height: 368px;
       }
 
-      .slider-container {
-        width: 380px;
-        height: 368px;
+      .background-img {
+        background-size: 380px 368px;
+      }
 
-        img {
-          max-width: 380px;
-          max-height: 368px;
-        }
+      .foreground-img {
+        background-size: 380px 368px;
+      }
 
-        .background-img {
-          background-size: 380px 368px;
-        }
-
-        .foreground-img {
-          background-size: 380px 368px;
-        }
-
-        .slider {
-          
-          &::-webkit-slider-thumb {
-            width: 3px;
-            height: 368px;
-          }
+      .slider {
+        
+        &::-webkit-slider-thumb {
+          width: 3px;
+          height: 368px;
         }
       }
     }

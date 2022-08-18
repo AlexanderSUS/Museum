@@ -1,30 +1,23 @@
 @media only screen and (max-width: 768px) {
- 
   .explore-section { 
-
     margin-top: 0;
-
-    h2 { text-align: left;}
     
     p {
       display: none;
     }
+
+    h2:after {
+      top: 80px;
+    }
     
     .container {
       flex-direction: column;
+      flex-wrap: nowrap;
       align-items: unset;
 
-      .text-content {
-        max-width: 728px;
-      }
-
       .slider-container {
-
         width: 728px;
         height: 705px;
-        img {
-          background-size: 728px 100%;
-        }
       }
     }
   }
