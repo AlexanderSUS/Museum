@@ -1,3 +1,7 @@
+footer {
+  padding: 0 20px; 
+}
+
 .inner-footer {
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +10,7 @@
 
   max-width: $wrapper-length-1920-1440;
   margin: 0 auto;
+
   padding-top: 75px;
   padding-bottom: 50px;
 }
@@ -15,27 +20,22 @@
 }
 
 .footer-nav {
-  padding-top: 2px;;
-}
+  display: flex;
+  column-gap: 166px;
 
-.footer-nav.second {
-  margin-left: 32px;
+  margin-top: 6px;
 }
 
 .footer-nav-list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  gap:25px 160px ;
-  max-height: 155px; 
+  row-gap: 25px;
 
-  background-color: $bg-dark;
+  max-height: 155px; 
 }
 
 .footer-nav-link {
-  display: block;
-
   margin-top: 2px;
 
   font-family:'Roboto', sans-serif;
@@ -45,6 +45,7 @@
   font-style: normal;
   line-height: 25.78px;
   letter-spacing: 2px;
+
   transition: 0.3s;
 
   &:hover,
