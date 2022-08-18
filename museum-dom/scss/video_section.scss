@@ -166,16 +166,13 @@
     
   .preview-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .slide-screen {
-    max-width: 452px;
-    &:hover { 
-      cursor: pointer;
-    }
+    flex-basis: 452px;
   }
 }
 
@@ -204,12 +201,6 @@
 
 .active-dot { background-color: #333; }
 
-@media (max-width: 1440px) {
-  .video-section .container .slide-screen {
-    max-width: 300px;
-    height: 170px;
-  }
-}
 
 @media (max-width: 1220px) {
   .time-range {
@@ -224,4 +215,11 @@
     width: $video-screen-btn-1024;
     height: $video-screen-btn-1024;
   }
+}
+
+@media (max-width: 948px) {
+  .video-section .container .slide-screen {
+    &:first-of-type {display: none;}
+  }
+
 }

@@ -1,20 +1,23 @@
-@media only screen and (max-width: 768px) { 
-  .dots-control {
-    width: 190px;
-    height: 12px;
-    
-    margin: 20px auto 40px auto;
-  }
+.dots-control {
+  width: 190px;
+  height: 12px;
+  
+  margin: 20px auto 40px auto;
+}
 
-  .dot-btn {
-    height: 10px;
-    width: 10px;
-  }
+.dot-btn {
+  height: 10px;
+  width: 10px;
+}
 
+.video-section .container .slide-screen {
+  max-width: 350px;
+  max-height: 199px;
+}
+
+@media (max-width: 662px) {
   .video-section .container .slide-screen {
-    max-width: 350px;
-    height: 199px;
-
-    &:first-of-type {display: none;}
+    max-width: 175px;
+    height: 101px;
   }
 }

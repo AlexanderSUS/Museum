@@ -692,6 +692,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 72px;
   column-gap: 60px;
 }
@@ -971,6 +972,26 @@ header {
     height: 705px;
   }
 }
+@media only screen and (max-width: 764px) {
+  .explore-section .container .slider-container {
+    width: 450px;
+    height: 463px;
+  }
+  .explore-section .container .slider-container img {
+    max-width: 450px;
+    max-height: 463px;
+  }
+  .explore-section .container .slider-container .background-img {
+    background-size: 450px 463px;
+  }
+  .explore-section .container .slider-container .foreground-img {
+    background-size: 450px 463px;
+  }
+  .explore-section .container .slider-container .slider::-webkit-slider-thumb {
+    width: 3px;
+    height: 463px;
+  }
+}
 @media only screen and (max-width: 420px) {
   .explore-section .container h2:after {
     top: 57px;
@@ -1164,15 +1185,12 @@ header {
 }
 .video-section .container .preview-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 }
 .video-section .container .slide-screen {
-  max-width: 452px;
-}
-.video-section .container .slide-screen:hover {
-  cursor: pointer;
+  flex-basis: 452px;
 }
 
 .dots-control {
@@ -1199,12 +1217,6 @@ header {
   background-color: #333;
 }
 
-@media (max-width: 1440px) {
-  .video-section .container .slide-screen {
-    max-width: 300px;
-    height: 170px;
-  }
-}
 @media (max-width: 1220px) {
   .time-range {
     max-width: 600px;
@@ -1216,6 +1228,11 @@ header {
     left: 534px;
     width: 152px;
     height: 152px;
+  }
+}
+@media (max-width: 948px) {
+  .video-section .container .slide-screen:first-of-type {
+    display: none;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1251,8 +1268,6 @@ header {
   }
 
   /* Styles for slider */
-}
-@media only screen and (max-width: 1024px) and (max-width: 1024px) {
   .video-module {
     display: flex;
     flex-direction: column;
@@ -1278,7 +1293,7 @@ header {
 
   .video-section .container .slide-screen {
     max-width: 300px;
-    height: 170px;
+    max-height: 170px;
   }
 
   .dots-control {
@@ -1347,8 +1362,6 @@ header {
   }
 
   /* Styles for slider */
-}
-@media only screen and (max-width: 768px) and (max-width: 768px) {
   .dots-control {
     width: 190px;
     height: 12px;
@@ -1362,10 +1375,13 @@ header {
 
   .video-section .container .slide-screen {
     max-width: 350px;
-    height: 199px;
+    max-height: 199px;
   }
-  .video-section .container .slide-screen:first-of-type {
-    display: none;
+}
+@media only screen and (max-width: 768px) and (max-width: 662px) {
+  .video-section .container .slide-screen {
+    max-width: 175px;
+    height: 101px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -1407,11 +1423,6 @@ header {
   /* Styles for slider */
 }
 @media only screen and (max-width: 420px) and (max-width: 420px) {
-  .video-section .container .slide-screen {
-    max-width: 175px;
-    height: 101px;
-  }
-
   .dots-control {
     width: 174px;
     height: 8px;
@@ -1717,7 +1728,7 @@ input[type=radio]:not(:checked) + label {
 }
 
 /* END  RADIO BUTTON STYLE */
-@media (max-width: 1096px) {
+@media (max-width: 1115px) {
   .ticket-input-area {
     padding-left: 0;
     justify-content: flex-end;

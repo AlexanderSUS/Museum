@@ -22,3 +22,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 764px) {
+  .explore-section .container .slider-container {
+    width: 450px;
+    height: 463px;
+
+      img {
+        max-width: 450px;
+        max-height: 463px;
+      }
+
+      .background-img {
+        background-size: 450px 463px;
+      }
+
+      .foreground-img {
+        background-size: 450px 463px;
+      }
+
+      .slider {
+        
+        &::-webkit-slider-thumb {
+          width: 3px;
+          height: 463px;
+        }
+      }
+
+  }
+}
