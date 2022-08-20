@@ -1,8 +1,9 @@
-@media only screen and (max-width: 1024px) {
- 
+@media only screen and (max-width: $break-1024) {
   .explore-section { 
 
-    h2:after { max-width: 984px; }
+    h2:after { 
+      top: 92px;
+    }
     
     p {
       margin-top: 0;
@@ -24,8 +25,12 @@
       flex-direction: column;
       align-items: center;
 
-        .text-content {
-        max-width: 984px;
+      .text-content {
+        max-width: unset;
+      }
+
+      .slider-container {
+        margin-top: 0;
       }
     }
   }

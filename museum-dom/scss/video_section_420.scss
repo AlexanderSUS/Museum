@@ -1,9 +1,39 @@
 @media only screen and (max-width: 420px) { 
+  .video-section .text-content {
+    column-gap: 0px;
+  }
+
+  .custom-vp {
+    max-height: 226px;
+  }
+
   video { 
     max-width: 380px;
     max-height: 226px;
 
     margin-bottom: 40px;
+  }
+
+  .screen-play-btn {
+    top: calc(($video-height-420 - $video-screen-btn-420) / 2);
+    left: calc(($wrapper-length-420-420 - $video-screen-btn-420) / 2);
+
+    width: $video-screen-btn-420;
+    height: $video-screen-btn-420;
+  }
+
+  .video-control {
+    height: 55px;
+    top: -95px;
+  }
+
+  .video-control-btn:not(.screen-play-btn) {
+    transform: scale(50%)
+  }
+
+  .time-range {
+    max-width: 200px;  
+    height: 4px;
   }
 
     /* Styles for slider */

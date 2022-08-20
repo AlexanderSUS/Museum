@@ -1,33 +1,30 @@
-.section { 
-  width: 100%;
-  margin: 0 auto;
-  padding: 75px 0; 
+@import 'mixins.scss';
 
-  background-color: #fff;
+.section { 
+  padding: 75px 20px; 
 }
 
-.dark-section { background-color: #030303; }
-
-.video { padding-top: 90px; }
+.section.welcome-section{
+  padding: 0 20px;
+}
 
 .container {
-  max-width: 1440px;
-  width: 100%;
+  max-width: $wrapper-length-1920-1440;
+
   margin: 0 auto;
 }
 
-/*    TITLES STYLE   */
 .section-title {
   margin-bottom: 103px;
-  font-family: Forum;
-  font-style: normal;
-  font-weight: normal;
+  margin-top: 0;
+
+  @include title-font;
   font-size: 80px;
   line-height: 90px;
- 
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #fff;
+}
+
+.section-title:not(.welcome-section) {
+  margin-bottom: 103px;
 }
 
 .gold-title { color: $font-gold; }
@@ -42,9 +39,8 @@
     left: 0;
     right: 0;
     height: 3px;
-    max-width: 1440px;
+    max-width: $wrapper-length-1920-1440;
     margin: 0 auto;
     background-color: #710707;
   }
 }
-/*    END TITLES STYLE   */

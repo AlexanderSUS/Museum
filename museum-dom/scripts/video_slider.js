@@ -228,15 +228,13 @@ function tglFullscreenBtn() {
 function toggleFullscreen() {
   if (!document.webkitFullscreenElement) {
     videoPlayer.webkitRequestFullscreen();
-    videoWrapper.style.maxWidth = "100%";
-    videoWrapper.style.maxHeight = "94%"
+    videoWrapper.classList.toggle('fullscreen')
     screenPlayBtn.classList.toggle('fullscreen');
     tglFullscreenBtn();
     
   } else {
     document.webkitExitFullscreen();
-    videoWrapper.style.maxWidth = "1440px";
-    videoWrapper.style.maxHeight = "650px";
+    videoWrapper.classList.toggle('fullscreen')
     screenPlayBtn.classList.toggle('fullscreen');
     tglFullscreenBtn();
   }

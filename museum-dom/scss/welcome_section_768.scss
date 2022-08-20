@@ -1,28 +1,24 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-768) {
   .welcome-section {
-    height: 861px;
-
     .container {
-      grid-template-columns: minmax(auto, 728px);
-      grid-template-rows: minmax(auto, 120px) minmax(auto, 25px) 
-                          minmax(auto, 20px) minmax(auto, 50px) 
-                          minmax(auto, 546px) minmax(auto, 100px);
+      grid-template-columns: minmax(auto, 193px ) minmax(auto, 340px) minmax(auto, 193px);
+      grid-template-rows: minmax(auto, 120px) 
+                          minmax(auto, 25px) 
+                          minmax(auto, 20px)
+                          minmax(auto, 50px) 
+                          minmax(auto, 546px) 
+                          minmax(auto, 100px);
 
-      height: 861px;
-      max-width: 728px;
+      h1 { 
+        grid-area: 1 / 1 / 2 / 4;
+        text-align: center;
 
-      .section-title {
         font-size: 40px;
         line-height: 60px ;
       }
 
-      h1 { 
-        grid-area: 1/ 1 /2 /2;
-        text-align: center;
-      }
-
       p {
-        grid-area: 3 / 1 / 4 / 1;
+        grid-area: 3 / 1 / 4 / 4;
         font-size: 20px;
         text-align: center;
       }
@@ -32,12 +28,11 @@
   }
 
   .welcome-slider {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 5 / 1 / 6 / 4;
   }
 
   .slide-control-wrapper {
-    grid-area: 6/ 1 / 7 /2; 
-    width: 728px;
+    grid-area: 6 / 1 / 7 / 4; 
 
     justify-content: center;
 
@@ -50,15 +45,7 @@
   }
 
   .arrow-control {
-    box-sizing: content-box;
-    padding-right: 0;
-  }
-
-  .square-control { 
-    box-sizing: content-box;
-    justify-content: space-between;
-    width: 160px;
-    padding: 0 45px 0 45px; 
+    margin-right: 0;
   }
   
   .square {

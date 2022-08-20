@@ -1,9 +1,12 @@
 @media only screen and (max-width: 1024px) { 
   .video-section {
-
-    h2 { margin-bottom: 40px; }
+    .section-title { margin-bottom: 40px; }
 
     p { display: none; }
+  }
+
+  .custom-vp {
+    max-height: 504px;
   }
 
   video {
@@ -12,10 +15,28 @@
     margin-bottom: 40px;
   }
 
-  .video-control {
-    display: none;
-    }
+  .video-wrapper.fullscreen .main-screen-wrapper.active video {
+    height: calc(100vh - $video-control-heigth-1024);
+    max-width: none;
+    max-height: none;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
 
-    /* Styles for slider */
-    @import "video_slider_1024.scss";
+  .screen-play-btn {
+    top: calc(($video-height-1024 - $video-screen-btn-1024) / 2);
+    left: calc(($wrapper-length-1024-984 - $video-screen-btn-1024) / 2);
+  }
+
+  .video-control {
+    height: $video-control-heigth-1024;
+    top: -100px;
+  }
+
+  .video-control-btn:not(.screen-play-btn) {
+    transform: scale(75%)
+  }
+
+  /* Styles for slider */
+  @import "video_slider_1024.scss";
 }

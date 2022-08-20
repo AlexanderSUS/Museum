@@ -1,23 +1,27 @@
-@media only screen and (max-width: 768px) { 
-  .video-module {
+.dots-control {
+  width: 190px;
+  height: 12px;
+  
+  margin: 20px auto 40px auto;
+}
 
-    .slide-screen {
-      max-width: 354px;
-      height: 199px;
+.dot-btn {
+  height: 10px;
+  width: 10px;
+}
 
-      &:first-of-type {display: none;}
-    }
-  }
+.video-section .container .slider-container {
+  margin-top: 20px;
+}
 
-  .dots-control {
-    width: 190px;
-    height: 12px;
-    
-    margin: 20px auto 40px auto;
-  }
+.video-section .container .slide-screen {
+  max-width: 350px;
+  max-height: 199px;
+}
 
-  .dot-btn {
-    height: 10px;
-    width: 10px;
+@media (max-width: 662px) {
+  .video-section .container .slide-screen {
+    max-width: 175px;
+    height: 101px;
   }
 }

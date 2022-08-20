@@ -1,11 +1,14 @@
 @media only screen and (max-width: 768px) {
-  .section { 
+  .section:not(.welcome-section) { 
     padding: 40px 20px; 
   }
 
   .section-title { 
     font-size: 40px; 
     line-height: 60px;
+  }
+
+  .section-title:not(.welcome-section) {
     margin-bottom: 63px;
   }
 
