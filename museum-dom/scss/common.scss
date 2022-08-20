@@ -1,47 +1,88 @@
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-$bg-dark: #030303;
-$dark-red: #710707;
-$font-gold: #9d8665;
-
-$text-font: 'Roboto', sans-serif;
-$title-font: 'Forum', cursive;
-
-html { 
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*, *::before,
-*::after {
-  box-sizing: inherit;
-}
+@import 'vars';
+@import 'mixins.scss';
 
 body { 
-  font-family: $text-font;
-  font-size: 22px;
-  font-weight: 300;
-  color: #fff;
+  margin: 0;
 
-  background-color: #fff;
+  font-family: $text-font;
 }
 
-li { list-style: none; }
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none; 
+}
 
 a { 
   text-decoration: none;
   font-family:'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 100;
 }
 
-@media only screen and (max-width: 1024px) {
-  a { font-size: 20px; }
+.dark-section {
+  color: white;
+  background-color: $bg-dark;
+
+  a {
+    color: white;
+  }
+}
+
+.light-section {
+  color: black;
+  background-color: white;
+
+  a {
+    color: black;
+  }
+}
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 199px;
+  width: 100%;
+
+  padding: 2px;
+
+  svg {
+    fill: white;
+    transition: 0.7s;
+    
+    &:hover {
+      fill: $font-gold; 
+    }
+  }
+
+  .logo-text {
+    margin: 0 0 -5px 0;
+
+    @include title-font;
+    font-size: 28px;
+    line-height: 30.91px;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: $font-gold;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-420) {
+  .logo {
+    max-width: 136px;
+    column-gap: 25px;
+    padding: 0;
+  }
+
+  .logo .logo-text {
+    font-size: 16px;
+  }
+
 }

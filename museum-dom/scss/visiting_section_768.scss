@@ -1,8 +1,6 @@
 @media only screen and (max-width: 768px) {
   .visiting-cards {
-    height: auto;
-    grid-template-columns: repeat(auto-fit, 280px);
-    grid-gap: 40px 58px;
+    gap: 40px 58px;
 
     padding-bottom: 40px;
 

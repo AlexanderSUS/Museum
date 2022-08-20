@@ -1,0 +1,14 @@
+@import 'vars.scss';
+
+@mixin title-font {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@mixin link-font {
+  font-weight: 300;
+  letter-spacing: 2px;
+}

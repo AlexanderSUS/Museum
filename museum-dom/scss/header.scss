@@ -1,8 +1,8 @@
-header {
-  width: 100%;
-  margin: 0 auto;
+@import 'vars.scss';
+@import 'mixins.scss';
 
-  background-color: $bg-dark;
+header {
+  padding: 0 20px;
 }
 
 .header-container {
@@ -10,58 +10,16 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
-  max-width: 1440px;
-  width: 100%;
+
+  height: 9.375rem;
+  max-width: $wrapper-length-1920-1440;
 
   margin: 0 auto;
 }
 
-.header-container-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  max-width: 199px;
-  width: 100%;
-
-  .header-logo-logo {
-    height: 26px;
-    width: 49px;
-
-    svg {
-      fill: #fff;
-      transition: 0.7s;
-      
-      &:hover {
-      fill: $font-gold; 
-      }
-    }
-  }
-
-  .header-logo-text {
-    margin: 0;
-
-    font-family:'Forum', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 31px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-
-    transition: 0.3s;
-
-    &:hover {
-      color: $font-gold;
-    }
-  }
-}  
-
 .header-nav {
   max-width: 775px;
   width: 100%;
-
 }
 
 .header-nav-list {
@@ -69,21 +27,15 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  background-color: $bg-dark;
 }
 
 .header-nav-link {
   display: block;
 
-  font-family:'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 300;
+  @include link-font; 
+  font-size: 1.375rem;
+  line-height: 1.625;
 
-  color: #fff;
-  font-style: normal;
-  line-height: 26px;
-  letter-spacing: 2px;
   transition: 0.3s;
 
   &:hover,
