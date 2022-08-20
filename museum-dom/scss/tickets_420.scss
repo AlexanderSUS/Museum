@@ -1,4 +1,8 @@
 @media only screen and (max-width: 420px) {
+  .section:not(.welcome-section).tickets-section {
+    padding-bottom: 120px;
+  }
+
   .tickets-section .container {
     max-height: unset; 
   }

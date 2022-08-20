@@ -746,6 +746,7 @@ header {
   .visiting-cards a img {
     width: 330px;
     height: 215px;
+    margin-bottom: 4px;
   }
 
   .cards h3 {
@@ -923,9 +924,6 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-  .explore-section {
-    margin-top: 10px;
-  }
   .explore-section h2:after {
     top: 92px;
   }
@@ -1351,7 +1349,7 @@ header {
   }
 
   .custom-vp {
-    max-height: 368px;
+    max-height: 386px;
   }
 
   video {
@@ -1368,9 +1366,8 @@ header {
   }
 
   .video-control {
-    order: 2;
-    height: 63px;
-    top: -80px;
+    height: 53px;
+    top: -75px;
   }
 
   .time-range {
@@ -1396,6 +1393,10 @@ header {
   .dot-btn {
     height: 10px;
     width: 10px;
+  }
+
+  .video-section .container .slider-container {
+    margin-top: 20px;
   }
 
   .video-section .container .slide-screen {
@@ -1770,7 +1771,7 @@ input[type=radio]:not(:checked) + label {
   }
 
   .ticket-input-area {
-    margin-right: 1rem;
+    margin-right: 28px;
     padding-left: 0;
   }
 
@@ -1783,7 +1784,7 @@ input[type=radio]:not(:checked) + label {
   }
 
   .ticket-input-area label {
-    margin-top: 18px;
+    margin-top: 9px;
     margin-bottom: 0px;
   }
 
@@ -1792,7 +1793,7 @@ input[type=radio]:not(:checked) + label {
   }
 
   .buy-now {
-    margin-right: 14px;
+    margin-right: 28px;
     margin-top: 57px;
   }
 }
@@ -1822,7 +1823,7 @@ input[type=radio]:not(:checked) + label {
 
   .buy-now {
     margin-top: 30px;
-    margin-right: 34px;
+    margin-right: 50px;
   }
 
   .output-sum-text {
@@ -1830,6 +1831,10 @@ input[type=radio]:not(:checked) + label {
   }
 }
 @media only screen and (max-width: 420px) {
+  .section:not(.welcome-section).tickets-section {
+    padding-bottom: 120px;
+  }
+
   .tickets-section .container {
     max-height: unset;
   }
@@ -1938,8 +1943,11 @@ input[type=radio]:not(:checked) + label {
   .contacts h3 {
     margin: 0 0 35px 0;
     font-size: 24px;
+    line-height: 28.31px;
+    font-weight: 500;
   }
   .contacts p {
+    line-height: 23px;
     font-size: 20px;
     margin: 0 0 15px 0;
   }
@@ -2111,6 +2119,9 @@ hr {
     column-gap: unset;
     padding-top: 65px;
   }
+  .inner-footer .logo {
+    padding: 0;
+  }
 
   .footer-nav {
     justify-content: space-between;
@@ -2118,7 +2129,7 @@ hr {
     width: 100%;
     column-gap: unset;
     margin-top: 0;
-    margin-left: -34px;
+    margin-left: -50px;
   }
 
   .footer-socials {

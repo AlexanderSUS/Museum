@@ -4,7 +4,7 @@
   }
 
   .custom-vp {
-    max-height: 368px;
+    max-height: 386px;
   }
 
   video { 
@@ -23,9 +23,8 @@
   }
 
   .video-control {
-    order: 2;
-    height: 63px;
-    top: -80px;
+    height: $video-control-heigth-768;
+    top: -75px;
   }
 
   .time-range {
