@@ -15,13 +15,21 @@
     margin-bottom: 40px;
   }
 
+  .video-wrapper.fullscreen .main-screen-wrapper.active video {
+    height: calc(100vh - $video-control-heigth-1024);
+    max-width: none;
+    max-height: none;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+
   .screen-play-btn {
     top: calc(($video-height-1024 - $video-screen-btn-1024) / 2);
     left: calc(($wrapper-length-1024-984 - $video-screen-btn-1024) / 2);
   }
 
   .video-control {
-    height: 60px;
+    height: $video-control-heigth-1024;
     top: -100px;
   }
 

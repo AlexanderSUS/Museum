@@ -1036,6 +1036,7 @@ header {
 
 .custom-vp {
   max-height: 735px;
+  overflow: hidden;
 }
 
 .video-control {
@@ -1052,6 +1053,11 @@ header {
 
 .button-wrapper {
   height: 0;
+}
+
+.button-wrapper button {
+  border: none;
+  padding: 0;
 }
 
 .screen-play-btn {
@@ -1113,6 +1119,15 @@ header {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.video-wrapper.fullscreen .main-screen-wrapper.active video {
+  width: 100%;
+  height: calc(100vh - 85px);
+}
+
+.video-wrapper.fullscreen ~ .video-control {
+  top: 0;
 }
 
 .main-screen-wrapper {
@@ -1253,6 +1268,14 @@ header {
     max-width: 984px;
     max-height: 504px;
     margin-bottom: 40px;
+  }
+
+  .video-wrapper.fullscreen .main-screen-wrapper.active video {
+    height: calc(100vh - 60px);
+    max-width: none;
+    max-height: none;
+    margin-bottom: 0;
+    object-fit: contain;
   }
 
   .screen-play-btn {
