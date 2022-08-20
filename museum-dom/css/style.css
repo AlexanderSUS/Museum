@@ -992,10 +992,7 @@ header {
     height: 463px;
   }
 }
-@media only screen and (max-width: 420px) {
-  .explore-section .container h2:after {
-    top: 57px;
-  }
+@media only screen and (max-width: 506px) {
   .explore-section .container .slider-container {
     width: 380px;
     height: 368px;
@@ -1013,6 +1010,11 @@ header {
   .explore-section .container .slider-container .slider::-webkit-slider-thumb {
     width: 3px;
     height: 368px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .explore-section .container h2:after {
+    top: 57px;
   }
 }
 /*    END EXPLORE SECTION   */
