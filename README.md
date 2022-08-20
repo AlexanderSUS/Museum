@@ -2,9 +2,10 @@
 
 Museum is task that was done during attending js/frontend course of [Rolling Scopes School](https://rs.school/js/).
 
-Approach: descktop first.
+Approach: desktop first.
 
-Breackpoints:
+Breakpoints:
+ - 1920px
  - 1042px
  - 768px
  - 420px
