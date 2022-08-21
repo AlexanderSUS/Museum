@@ -2098,7 +2098,8 @@ hr {
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  height: 124px;
+  min-height: 124px;
+  height: 100%;
   margin: 0 auto;
   font-size: 22px;
   letter-spacing: 2px;
@@ -2110,10 +2111,6 @@ hr {
 }
 
 @media only screen and (max-width: 1024px) {
-  footer {
-    height: 368px;
-  }
-
   .inner-footer {
     justify-content: space-between;
     column-gap: unset;
@@ -2141,10 +2138,6 @@ hr {
   }
 }
 @media only screen and (max-width: 768px) {
-  footer {
-    height: 411px;
-  }
-
   .inner-footer {
     flex-wrap: wrap;
     row-gap: 54px;
@@ -2175,7 +2168,7 @@ hr {
   }
 
   .footer-bottom {
-    max-height: 99px;
+    min-height: 99px;
     height: 100%;
   }
 }

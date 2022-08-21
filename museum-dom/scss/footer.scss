@@ -101,7 +101,8 @@ hr {
   align-items: center;
 
   max-width: 1440px;
-  height: 124px;
+  min-height: 124px;
+  height: 100%;
   margin: 0 auto;
 
   font-size: 22px;
