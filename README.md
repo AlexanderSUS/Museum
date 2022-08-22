@@ -1,8 +1,9 @@
 ### Museum
 
-Museum is task that was done during attending js/frontend course of [Rolling Scopes School](https://rs.school/js/).
+Museum is landing page for Louvre, has responsive and adaptive design with pixel perfect accuracy.
+Approach is desktop first.
 
-Approach: desktop first.
+Deploy https://rss-museum.netlify.app
 
 Breakpoints:
  - 1920px
@@ -10,9 +11,9 @@ Breakpoints:
  - 768px
  - 420px
 
-Deploy https://rss-museum.netlify.app
-
 Task links:
  - Part 1 https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum-stage1.md
  - Part 2 https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum-adaptive.md
  - Part 3 https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum-dom.md
+
+This task was done during attending js/frontend course of [Rolling Scopes School](https://rs.school/js/).
